@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <main class="main">
+        <section class="hero">
+            <div class="wrapper">
+                <h2>Ro'yxatdan o'ting</h2>
+                <form class="form" action="">
+                    <label>
+                        Foydalanuvchi ismi:
+                        <input type="text" placeholder="Ismingizni kiriting" id="ism"  autocomplete="none">
+                        <div class="error"></div>
+                    </label>
+                    <label>
+                        Email:
+                        <input type="email" placeholder="Email kiriting" id="email"  required autocomplete="none">
+                         <div class="emailerror"></div>
+                    </label>
+                    <label>
+                        Parol kiriting:
+                        <input  type="password" placeholder="Parol kamida 6ta bo'lishi kerak" id="parolOne"  required autocomplete="none">
+                        <div class="parolo"></div>
+                        <small class="inpsmall"></small>
+                    </label>
+                    <label>
+                        Parolni takrorlang:
+                        <input type="password" placeholder="Parol kamida 6ta bo'lishi kerak" id="parolTwo"  required autocomplete="none">
+                        <div class="parolt"></div>
+                        <small class="inpsmallnext"></small>
+                    </label>
+                </form>
+                <button class="wrapper__btn">Ro'yxatdan o'tish</button>
+            </div>
+            <h2 class="create">Create by &copy; abduvokhid__komilov</h2>
+        </section>
+       
+    </main>
+    <footer>
+       
+    </footer>
+    <script src="./app.js"></script>
+</body>
+</html>

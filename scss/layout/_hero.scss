@@ -1,0 +1,100 @@
+.hero {
+    width: 100%;
+    height: 100%;
+    background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,.4)),url(../images/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0p;
+   
+    
+    .wrapper {
+        padding: 30px 20px;
+        width: 30%;
+        height: auto;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.85);
+        border-radius: 1rem;
+        margin-bottom: 1rem;
+        box-shadow: 0px 0px 26px 17px rgba(255, 128, 0, 0.6) ;
+        @include responsive(tablet ){
+            width: 70%;
+            margin: 20px 0px;
+        }
+        @include responsive(phone) {
+            width: 80%;
+        }
+
+    &__btn {
+            width: 100%;
+            padding: 15px 5px;
+            border-radius: .5rem;
+            background-color: blue;
+            color: #fff;
+            margin-top: 25px;
+
+
+            
+        }
+        &__btn:active{
+            opacity: 0.5;
+            border: none;
+        }
+        &__btn:hover {
+            background-color: rgb(104, 200, 224);
+            color: red;
+            font-weight: 700;
+            box-shadow: 0px 0px 15px 10px rgba(255, 0, 79, 0.2);
+        }
+        h2 {
+            margin-bottom: 25px;
+        }
+    }
+    .form {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        gap: 20px;
+        @include responsive(tablet ){
+            gap: 25px;
+        }
+        
+    }
+    label {
+        display: flex;
+        flex-direction: column;
+    }
+    input {
+        
+        padding: 10px 5px;
+        border-radius: .5rem;
+        background-color: #fff;
+        font-weight: 600;
+        border: 2px solid rgb(77, 216, 162);
+    }
+    input:hover {
+        cursor: pointer;
+    }
+    input:active{
+        cursor: context-menu;
+    }
+    form div{
+        font-size: 15px;
+        height: 15px;
+        color: red;
+    }
+    .create{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: rgb(118, 187, 187);
+        text-align: center;
+        font-size: 22px;
+        text-shadow: 0px 0px px rgb(150, 8, 8);
+    }
+   
+    
+   
+}
