@@ -411,7 +411,6 @@ h2 {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  padding: 20px 0p;
 }
 .hero .wrapper {
   padding: 30px 20px;
@@ -425,7 +424,6 @@ h2 {
 }
 @media screen and (max-width: 880px) {
   .hero .wrapper {
-    padding: 10px 5px;
     width: 70%;
     margin: 20px 0px;
   }
@@ -433,6 +431,8 @@ h2 {
 @media screen and (max-width: 400px) {
   .hero .wrapper {
     width: 80%;
+    padding: 10px 10px;
+    margin-bottom: 0.5rem;
   }
 }
 .hero .wrapper__btn {
@@ -442,6 +442,11 @@ h2 {
   background-color: blue;
   color: #fff;
   margin-top: 25px;
+}
+@media screen and (max-width: 400px) {
+  .hero .wrapper__btn {
+    margin-top: 15px;
+  }
 }
 .hero .wrapper__btn:active {
   opacity: 0.5;
