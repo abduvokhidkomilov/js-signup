@@ -425,6 +425,7 @@ h2 {
 }
 @media screen and (max-width: 880px) {
   .hero .wrapper {
+    padding: 10px 5px;
     width: 70%;
     margin: 20px 0px;
   }
@@ -463,7 +464,7 @@ h2 {
 }
 @media screen and (max-width: 880px) {
   .hero .form {
-    gap: 25px;
+    gap: 10px;
   }
 }
 .hero label {
